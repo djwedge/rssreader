@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'items/index'
+
+  get 'items/show'
+
+  get 'items/new'
+
   resources :rssfeeds
 
   root 'welcome#index'

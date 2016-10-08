@@ -1,10 +1,35 @@
 <p>
-  <strong>Title:</strong>
+  <strong>Titre :</strong>
   <%= @rssfeed.title %>
 </p>
 
 <p>
-  <strong>URL:</strong>
+  <strong>URL :</strong>
   <%= @rssfeed.feedurl %>
 </p>
+<h2>Contenu du flux : </h2>
+<% @rssfeed.items.each do |item| %>
+  <p>
+    <strong>Titre de l'article :</strong>
+    <%= item.title %>
+  </p>
+  <p>
+    <strong>Résumé de l'article :</strong>
+    <%= item.summary %>
+  </p>
+  <p>
+    <strong>Date :</strong>
+    <%= item.date %>
+  </p>
+  <p>
+    <a href='<%= item.url %>'>Voir l'article</a>
+  </p>
+  <p>
+    <% if item.status %>
+      <b>non-lu</b>
+    <% else %>
+      <i>non-lu</i>
+    <% end %>
+  </p>
+<% end %>
 <%= link_to 'Retour à la liste', rssfeeds_path %>

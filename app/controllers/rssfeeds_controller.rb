@@ -25,6 +25,13 @@ class RssfeedsController < ApplicationController
   end
 end
 
+def destroy
+  @rssfeed = Rssfeed.find(params[:id])
+  @rssfeed.destroy
+
+  redirect_to rssfeeds_path
+end
+
 private
   def rssfeed_params
     params.require(:rssfeed).permit(:title, :feedurl)
@@ -36,9 +43,10 @@ private
       feed = RSS::Parser.parse(rss)
       feed.items.each do |elem|
         # comment faire item = new Item(elem.title, elem.date, rssfeed.id, status = 0) ... ?
-        #@item = Item.new
-        #puts "Item: #{elem.title}"
+        @item = Item.new(title: elem.title, summary: elem.description,
+                         date: elem.date, url: elem.link, rssfeed_id: @rssfeed.id)
+        @item.save
       end
     end
-
+  end
 end

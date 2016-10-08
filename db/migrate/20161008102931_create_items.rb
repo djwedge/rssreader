@@ -6,6 +6,7 @@ class CreateItems < ActiveRecord::Migration[5.0]
       t.datetime :date
       t.boolean :status
       t.string :url
+      t.integer :rssfeed_id
 
       t.timestamps
     end
