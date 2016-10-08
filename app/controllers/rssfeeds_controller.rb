@@ -1,0 +1,1 @@
+class RssfeedsController < ApplicationController
