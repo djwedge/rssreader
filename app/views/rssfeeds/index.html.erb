@@ -1,1 +1,19 @@
+<h1>Listing feeds</h1>
 
+<%= link_to 'Ajouter un flux', new_rssfeed_path %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>URL</th>
+    <th colspan="2"></th>
+  </tr>
+
+  <% @rssfeeds.each do |rssfeed| %>
+    <tr>
+      <td><%= rssfeed.title %></td>
+      <td><%= rssfeed.feedurl %></td>
+      <td><%= link_to 'Show', rssfeed_path(rssfeed) %></td>
+    </tr>
+  <% end %>
+</table>

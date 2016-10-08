@@ -5,11 +5,12 @@
   </p>
 
   <p>
-    <%= f.label :url %><br>
-    <%= f.text_field :url %>
+    <%= f.label :feedurl %><br>
+    <%= f.text_field :feedurl %>
   </p>
 
   <p>
     <%= f.submit %>
   </p>
 <% end %>
+<%= link_to 'Retour à la liste', rssfeeds_path %>
