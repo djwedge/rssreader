@@ -29,11 +29,11 @@
     </p>
     <p>
       <% if item.status %>
-        <% link_to('<i>marquer comme non-lu</i>', url: item_path(item),
-          method: :patch) %>
+        <i><%= link_to 'marquer comme non-lu', url: item_path(item),
+          method: :patch %></i>
       <% else %>
-        <% link_to('<b>marquer comme lu</b>', url: item_path(item),
-          method: :patch) %>
+        <b><%= link_to 'marquer comme lu', url: item_path(item),
+          method: :patch %></b>
       <% end %>
     </p>
   </div>
