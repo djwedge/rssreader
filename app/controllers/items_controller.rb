@@ -14,4 +14,16 @@ class ItemsController < ApplicationController
     @status = false # false pour non-lu, true pour lu
     # @item.save # ne fonctionne pas ici mais ok dans RssfeedsController (?)
   end
+
+  def update
+    # methode pour mettre a jour le statut (non-lu / lu)
+    @item = Item.find(params[:id])
+
+    if @item.update(status: !@item.status)
+      redirect_to @item
+    else
+      render 'show'
+    end
+  end
+
 end

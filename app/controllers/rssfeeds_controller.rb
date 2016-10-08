@@ -42,7 +42,6 @@ private
     open(url) do |rss|
       feed = RSS::Parser.parse(rss)
       feed.items.each do |elem|
-        # comment faire item = new Item(elem.title, elem.date, rssfeed.id, status = 0) ... ?
         @item = Item.new(title: elem.title, summary: elem.description,
                          date: elem.date, url: elem.link, rssfeed_id: @rssfeed.id)
         @item.save

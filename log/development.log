@@ -2202,3 +2202,350 @@ Processing by RssfeedsController#index as HTML
 Completed 200 OK in 46ms (Views: 44.7ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 11:07:35 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 11:08:36 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 11:08:47 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 12:41:19 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (114.3ms)
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `item_path' for #<#<Class:0x007f963dfcafa0>:0x007f963dfc82f0>
+Did you mean?  items_new_path):
+    32:           link_to('<b>marquer comme lu</b>', url: item_path(item),
+    33:           method: :patch) %>
+    34:       <% else
+    35:           link_to('<i>marquer comme non-lu</i>', url: item_path(item),
+    36:           method: :patch) %>
+    37:       <% end %>
+    38:     </p>
+  
+app/views/rssfeeds/show.html.erb:35:in `block in _app_views_rssfeeds_show_html_erb___3428906019209352397_70141630923460'
+app/views/rssfeeds/show.html.erb:11:in `_app_views_rssfeeds_show_html_erb___3428906019209352397_70141630923460'
+  Rendering /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.8ms)
+  Rendering /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.5ms)
+Started GET "/" for 127.0.0.1 at 2016-10-08 12:42:32 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 248ms (Views: 235.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rssfeeds" for 127.0.0.1 at 2016-10-08 12:42:34 +0000
+Processing by RssfeedsController#index as HTML
+  Rendering rssfeeds/index.html.erb within layouts/application
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT `rssfeeds`.* FROM `rssfeeds`[0m
+  Rendered rssfeeds/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 48ms (Views: 38.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 12:42:38 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (126.7ms)
+Completed 500 Internal Server Error in 149ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `item_path' for #<#<Class:0x000000045ca658>:0x007f38fdc25e38>
+Did you mean?  items_new_path):
+    32:           link_to('<b>marquer comme lu</b>', url: item_path(item),
+    33:           method: :patch) %>
+    34:       <% else
+    35:           link_to('<i>marquer comme non-lu</i>', url: item_path(item),
+    36:           method: :patch) %>
+    37:       <% end %>
+    38:     </p>
+  
+app/views/rssfeeds/show.html.erb:35:in `block in _app_views_rssfeeds_show_html_erb___2746895512803132430_69941376136280'
+app/views/rssfeeds/show.html.erb:11:in `_app_views_rssfeeds_show_html_erb___2746895512803132430_69941376136280'
+  Rendering /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.8ms)
+  Rendering /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.6ms)
+Started GET "/" for 127.0.0.1 at 2016-10-08 12:46:32 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 248ms (Views: 235.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rssfeeds" for 127.0.0.1 at 2016-10-08 12:46:34 +0000
+Processing by RssfeedsController#index as HTML
+  Rendering rssfeeds/index.html.erb within layouts/application
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT `rssfeeds`.* FROM `rssfeeds`[0m
+  Rendered rssfeeds/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 47ms (Views: 37.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 12:46:37 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (53.7ms)
+Completed 200 OK in 87ms (Views: 79.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 12:47:38 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 43ms (Views: 40.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 12:47:41 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 12:47:51 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.3ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (42.1ms)
+Completed 200 OK in 380ms (Views: 336.1ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 12:49:50 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 64ms (Views: 61.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 12:53:39 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 94ms (Views: 90.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 12:54:40 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (5.4ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (28.6ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 5.5ms)
+
+
+  
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::NULL):
+    28:       <a href='<%= item.url %>'>Voir l'article</a>
+    29:     </p>
+    30:     <p><%= item.status %>
+    31:       <% if item.status == NULL %>
+    32:         <% link_to('<b>marquer comme lu</b>', url: item_path(item),
+    33:           method: :patch) %>
+    34:       <% else %>
+  
+app/views/rssfeeds/show.html.erb:31:in `block in _app_views_rssfeeds_show_html_erb__4331350570478517988_70054865542800'
+app/views/rssfeeds/show.html.erb:11:in `_app_views_rssfeeds_show_html_erb__4331350570478517988_70054865542800'
+  Rendering /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.9ms)
+  Rendering /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/ubuntu/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.6ms)
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 12:54:55 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 47ms (Views: 44.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 12:55:30 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 46ms (Views: 43.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 12:55:35 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 43ms (Views: 41.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-08 12:56:05 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 246ms (Views: 233.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rssfeeds" for 127.0.0.1 at 2016-10-08 12:56:07 +0000
+Processing by RssfeedsController#index as HTML
+  Rendering rssfeeds/index.html.erb within layouts/application
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT `rssfeeds`.* FROM `rssfeeds`[0m
+  Rendered rssfeeds/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 64ms (Views: 53.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 12:56:09 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (42.8ms)
+Completed 200 OK in 76ms (Views: 69.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 12:56:36 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 49ms (Views: 46.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 12:56:39 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-10-08 12:56:50 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 250ms (Views: 237.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rssfeeds" for 127.0.0.1 at 2016-10-08 12:56:52 +0000
+Processing by RssfeedsController#index as HTML
+  Rendering rssfeeds/index.html.erb within layouts/application
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT `rssfeeds`.* FROM `rssfeeds`[0m
+  Rendered rssfeeds/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 48ms (Views: 37.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 12:56:54 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.3ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (42.9ms)
+Completed 200 OK in 77ms (Views: 69.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 12:57:24 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 47ms (Views: 44.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 12:59:18 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/rssfeeds/18" for 127.0.0.1 at 2016-10-08 12:59:20 +0000
+Processing by RssfeedsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mRssfeed Load (0.2ms)[0m  [1m[34mSELECT  `rssfeeds`.* FROM `rssfeeds` WHERE `rssfeeds`.`id` = 18 LIMIT 1[0m
+  Rendering rssfeeds/show.html.erb within layouts/application
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT `items`.* FROM `items` WHERE `items`.`rssfeed_id` = 18[0m
+  Rendered rssfeeds/show.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 56ms (Views: 53.3ms | ActiveRecord: 0.4ms)
+
+

@@ -9,27 +9,33 @@
 </p>
 <h2>Contenu du flux : </h2>
 <% @rssfeed.items.each do |item| %>
-  <p>
-    <strong>Titre de l'article :</strong>
-    <%= item.title %>
-  </p>
-  <p>
-    <strong>Résumé de l'article :</strong>
-    <%= item.summary %>
-  </p>
-  <p>
-    <strong>Date :</strong>
-    <%= item.date %>
-  </p>
-  <p>
-    <a href='<%= item.url %>'>Voir l'article</a>
-  </p>
-  <p>
-    <% if item.status %>
-      <b>non-lu</b>
-    <% else %>
-      <i>non-lu</i>
-    <% end %>
-  </p>
+  <div style="border: black solid 2px;
+              padding: 4px;
+              margin: 2px">
+    <p>
+      <strong>Titre de l'article :</strong>
+      <%= item.title %>
+    </p>
+    <p>
+      <strong>Résumé de l'article :</strong>
+      <%= item.summary %>
+    </p>
+    <p>
+      <strong>Date :</strong>
+      <%= item.date %>
+    </p>
+    <p>
+      <a href='<%= item.url %>'>Voir l'article</a>
+    </p>
+    <p>
+      <% if item.status %>
+        <% link_to('<i>marquer comme non-lu</i>', url: item_path(item),
+          method: :patch) %>
+      <% else %>
+        <% link_to('<b>marquer comme lu</b>', url: item_path(item),
+          method: :patch) %>
+      <% end %>
+    </p>
+  </div>
 <% end %>
 <%= link_to 'Retour à la liste', rssfeeds_path %>
